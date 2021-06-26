@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+    src: url("../font/fontello.eot?30900161");
+    src: url("../font/fontello.eot?30900161#iefix") format("embedded-opentype"), url("../font/fontello.woff2?30900161") format("woff2"), url("../font/fontello.woff?30900161") format("woff"), url("../font/fontello.ttf?30900161") format("truetype"), url("../font/fontello.svg?30900161#fontello") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+  
+  *, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  
+  html {
+    font-size: 62.5%; }
+  
+  body, a, p, input, select, textarea {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    position: relative;
+    color: #383838;
+    display: block;
+    text-decoration: none; }
+  
+  .body {
+    position: relative; }
+  
+  * {
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  
+.container{
+  overflow: hidden;
+    width:100%;
+    height:100vh;
+    background-image: url(../../img/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media only screen and (max-width: 480px) and (min-width: 300px)  {
+      background-position: -57rem 0rem;
+    }
+    @media only screen and (max-width: 754px) and (min-width: 481px)  {
+      background-position-x: -38rem;
+    }
+    @media only screen and (max-width: 1000px) and (min-width: 755px)  {
+      background-position-x: -13rem;
+    }
+    @media only screen and (max-width: 1200px) and (min-width: 1001px)  {
+      
+    }
+
+
+    &__header{
+        padding:5rem;
+        width:100%;
+        display: flex;
+        //visibility: hidden;
+        justify-content: space-between;
+        @media only screen and (max-width: 480px) and (min-width: 300px)  {
+          padding:2rem;
+        }
+        @media only screen and (max-width: 754px) and (min-width: 481px)  {
+          padding:2rem;
+        }
+        @media only screen and (max-width: 1000px) and (min-width: 755px)  {
+          padding:3rem;
+        }
+        &--icon{
+
+            img{
+
+            }
+        }
+        &--toggle-button{
+          display: none;
+          flex-direction: column;
+          //justify-content: space-between;
+          
+          span{
+            width:3rem;
+            height:3px;
+            margin-bottom: 5px;
+            background-color: white;
+            border-radius:10px;
+          }
+          span:nth-of-type(2){
+            width:1.5rem;
+          }
+          
+          span:hover{
+              width:3rem;
+              transition: 1s ease;
+            
+          }
+        }
+        &--menu{
+            display:flex;
+            @media (max-width:755px){
+              display:none;
+            }
+            &--menuitems{
+                color:white;
+                font-size: 1.7rem;
+            }
+            ul{
+                display:flex;
+            }
+            li{
+                margin-right:8rem;
+                @media only screen and (max-width: 1000px) and (min-width: 755px)  {
+                  margin-right:4rem;
+                }
+            }
+            &--login{
+              margin-right:5rem;
+              border:1px solid white;
+              width:fit-content;
+              height:fit-content;
+              background-color:white;
+              border-radius: 1rem;
+              padding:2px 15px;
+
+            }
+        }
+    }
+    &__middle{
+      width:50%;
+      padding-left:24rem;
+      padding-top:4rem;
+      font-size:8rem;
+      font-weight:700;
+      line-height: 7.2rem;
+      letter-spacing: 2px;
+      @media only screen and (max-width: 480px) and (min-width: 300px)  {
+        padding-left: 1rem;
+        padding-top: 29rem;
+        font-size: 5rem;
+        line-height: 5.2rem;
+      }
+      @media only screen and (max-width: 754px) and (min-width: 481px)  {
+        padding-left: 4rem;
+        padding-top: 24rem;
+        font-size: 7rem;
+        line-height: 6.2rem;
+      }
+      @media only screen and (max-width: 1000px) and (min-width: 755px)  {
+        padding-left: 4rem;
+        padding-top: 4rem;
+        font-size: 8rem;
+        line-height: 7.2rem;
+      
+      }
+      @media only screen and (max-width: 1200px) and (min-width: 1001px)  {
+        padding-left: 13rem;
+        padding-top: 8rem;
+        font-size: 8rem;
+        line-height: 7.2rem;
+      }
+      @media only screen and (max-width: 1504px) and (min-width: 1201px)  {
+        padding-left: 9rem;
+        padding-top: 4rem;
+        font-size: 10rem;
+        line-height: 9.2rem;
+      }
+        &--words{
+            color:white;
+            @media only screen and (max-width: 480px) and (min-width: 300px)  {
+              color:#ac96d6;
+            }
+            @media only screen and (max-width: 754px) and (min-width: 481px)  {
+              color:#ac96d6;
+            }
+        }
+    }
+    &__bottom{
+
+    }
+}
+
+@media (max-width:755px){
+  .container__header--toggle-button{
+    display:flex;
+  }
+}
